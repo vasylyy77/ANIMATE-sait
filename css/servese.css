@@ -1,0 +1,253 @@
+body{
+background-color: rgb(245, 226, 185);
+}
+nav{
+    margin-top: 50px;
+    height: 100px;
+    position: relative;
+}
+.nav{
+    height: 100px;
+    position: absolute;
+    animation: nav_down 2s;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+   
+}
+@keyframes nav_down{
+    0%{
+        margin-top: -200px;
+    }100%{
+        margin-top: 0;
+    }
+ }
+.svg__logo{
+    width: 270px;
+  
+
+}
+.nav__list{
+   display: flex;
+   padding-left: 300px;
+    
+}
+.nav__a{
+    color:rgb(65, 63, 62);
+}
+.nav__cont-a{
+   height: 30px;
+    position: relative;
+    font-size: 14px;
+    font-weight: 200;
+    margin-left: 20px;
+    overflow: hidden;
+    
+}
+.nav__cont-a::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+   
+    height: 3px;
+    background-color: #fff;
+    left: -100%;
+    bottom:7px;
+   
+}
+ .nav__cont-a:hover:after{
+    left: 0;
+    transition: 1s;
+}
+
+
+/* title/////////////////////////////////////////////// */
+
+
+.title{
+position: relative;
+padding-top: 50px;
+height: 400px;
+color: rgb(61, 60, 58);
+animation: title-t  2s ;
+}
+
+.title__title h1{
+   margin-bottom: -40px;
+    font-size: 55px;
+}
+
+.title__title{
+    position: absolute;
+    animation: titleDown  3s ;
+}
+.title__span{
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    top: 14px;
+
+}
+.title__span::before{
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 100%;
+   /* left: -100%; */
+  
+    top: 40px;
+    opacity: 0.9;
+    background-color:  rgb(248, 203, 140);
+    animation: titleSpan 4s  ;
+
+}
+@keyframes titleSpan {
+    0%{
+        left:-300%; 
+    }100%{
+        left:0; 
+    }
+}
+.title__p{
+    top: 250px;
+    position: absolute;
+    animation: titleDown 2s ;
+   
+}
+@keyframes titleDown{
+    0%{
+        margin-top: 50px;
+        opacity: 0;
+    }100%{
+        margin-top: 0;
+        opacity: 1;
+    }
+ }
+
+ /* table//////////////////////////////// */
+
+ .table{
+     margin-top: 300px;
+     width: 100%;
+     background-color: rgb(245, 232, 216);
+     border:1px solid
+ }
+ .title{
+     height: 100px;
+ }
+ .table__row{
+     height: 50px;
+     display: flex;
+     border: 1px solid;
+     font-size: 14px;
+    
+ }
+ .table__row1{
+  
+  width: 25%;
+  border-right: 1px solid;
+  
+ }
+ .table__row-grey{
+     background-color: rgb(196, 191, 191);
+ }
+ .table__row-bol-y{
+     height: 40px;
+     width: 40px;
+     border-radius: 50%;
+     margin-top: 3px;
+     margin-left: 100px;
+     background-color: rgb(218, 197, 16);
+ }
+ .table__row-bol-b{
+     height: 35px;
+     width: 35px;
+     margin-top: 3px;
+     margin-left: 100px;
+     border-radius: 50%;
+     background-color:chocolate;
+ }
+ .title{
+     display: flex;
+ }
+ .tabl__main{
+     width: 25%;
+     background-color: ;
+ }
+ .tabl__main1{
+     width: 25%;
+     padding-top: 20px;
+     text-align: center;
+     color:cornsilk;
+     background-color: rgb(218, 197, 16);
+
+ }
+ .tabl__main11{
+     width: 25%;
+     background-color:chocolate;
+     text-align: center;
+    padding-top: 20px;
+     color:cornsilk;
+ }
+
+
+ .hit{
+     height: 500px;
+ }
+
+ /* line/////////////////////////////////////////// */
+
+ .line{
+     margin-top: 300px;
+     height: 3px;
+     width: 600px;
+     background-color:chocolate;
+     animation: line 3s ;
+ }
+ @keyframes line{
+     0%{
+         margin-left: -1000px;
+     }100%{
+         margin-left: 0;
+     }
+ }
+
+ /* servbox////////////////////////////////////////// */
+.sevbox{
+    padding-top: 50px;
+}
+ .servbox1{
+     width: 700px;
+     margin-left: 300px;
+     height: 300px;
+     display: flex;
+     margin-bottom: 50px;
+ }
+ .servbox2{
+     width: 700px;
+     display: flex;
+     height: 300px;
+ }
+ .servbox__box-title{
+     font-size: 45px;
+     margin-bottom: 20px;
+
+ }
+ .servbox__im{
+     width: 180px;
+     margin-right: 100px;
+     margin-top: 30px;
+     color:chocolate;
+ }
+
+ #footer{
+    padding: 60px;
+}
+ .footer{
+     color:rgb(88, 50, 3);
+     font-size: 16px;
+     margin-left: 100px 600px;
+   
+
+ }

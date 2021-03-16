@@ -1,0 +1,834 @@
+body{
+    font-family: 'Roboto', sans-serif;
+   background-color: rgb(80,60,73);
+}
+nav{
+    margin-top: 50px;
+    height: 100px;
+    position: relative;
+}
+.nav{
+    height: 100px;
+    position: absolute;
+    animation: nav_down 2s;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+   
+}
+@keyframes nav_down{
+    0%{
+        margin-top: -200px;
+    }100%{
+        margin-top: 0;
+    }
+ }
+.svg__logo{
+    width: 270px;
+  
+
+}
+.nav__list{
+   display: flex;
+   padding-left: 300px;
+    
+}
+.nav__a{
+    color:bisque;
+}
+.nav__cont-a{
+   height: 30px;
+    position: relative;
+    font-size: 14px;
+    font-weight: 200;
+    margin-left: 20px;
+    overflow: hidden;
+    
+}
+.nav__cont-a::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+   
+    height: 3px;
+    background-color: #fff;
+    left: -100%;
+    bottom:7px;
+   
+}
+ .nav__cont-a:hover:after{
+    left: 0;
+    transition: 1s;
+}
+
+
+/* title/////////////////////////////////////////////// */
+
+
+.title{
+position: relative;
+padding-top: 50px;
+height: 400px;
+color: bisque;
+animation: title-t  2s ;
+}
+
+.title__title h1{
+   
+    font-size: 55px;
+}
+.tittle__f{
+    margin-bottom: 50px;
+}
+.title__title{
+    position: absolute;
+    animation: titleDown  3s ;
+}
+.title__span{
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    top: 14px;
+
+}
+.title__span::before{
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 100%;
+   /* left: -100%; */
+  
+    top: 40px;
+    opacity: 0.9;
+    background-color:  rgb(158, 101, 21);
+    animation: titleSpan 4s  ;
+
+}
+@keyframes titleSpan {
+    0%{
+        left:-300%; 
+    }100%{
+        left:0; 
+    }
+}
+.title__p{
+    top: 250px;
+    position: absolute;
+    animation: titleDown 2s ;
+   
+}
+@keyframes titleDown{
+    0%{
+        margin-top: 50px;
+        opacity: 0;
+    }100%{
+        margin-top: 0;
+        opacity: 1;
+    }
+ }
+
+ /* scroll/////////////////////////////////////////// */
+
+
+ .scroll{
+display: flex;
+height: 500px;
+ }
+ .scroll__roll{
+     height: 70px;
+     width: 30px;
+     border:3px solid rgb(158, 101, 21);
+     border-radius: 30px;
+ }
+ .scroll__box{
+     display: flex;
+ }
+ .scroll__p{
+     margin-left: 20px;
+     width: 150px;
+ }
+ .scroll__stik{
+     height: 30px;
+     width: 3px;
+   position: relative;
+     margin: 10px 14px;
+     overflow: hidden;
+
+ }
+ .scroll__stik::before{
+     content: '';
+     position: absolute;
+    height: 30px;
+    width: 3px;
+    background-color: rgb(158, 101, 21);
+   left: 0;
+   top: -100%;
+   
+   animation: scrolstik 2s infinite ;
+ }
+ @keyframes scrolstik{
+     0%{
+        top: -100%;
+     }100%{
+         top:100%;
+     }
+ }
+ .scroll__img-img{
+     width: 35%;
+     transform: scale(1.3);
+     
+ }
+
+ /* anim for scrol ferst/////////////////////////////////////////////////// */
+
+ .scroll__img-scele{
+  
+    animation: scrolimg 2s ;
+ }
+ @keyframes scrolimg {
+     0%{
+         transform: scale(1);
+     }100%{
+        transform: scale(1.3);
+     }
+ }
+
+
+ /* our//////////////////////////////////////////////// */
+
+ .our{
+     height: 600px;
+    color:bisque;
+    position: relative;
+    
+ }
+ .our__title-h1{
+     position: relative;
+     font-size: 55px;
+ }
+ .our__text-h3{
+     position: relative;
+     color:chocolate;
+ }
+ .our__title{
+     position: relative;
+    animation: titleDown 3s ;
+ }
+ .our__text{
+     position: relative;
+    animation: titleDown 3s ;
+ }
+ .our__p-text{
+     position: relative;
+    animation: titleDown 3s ;
+ }
+
+ /* values///////////////////////////////// */
+
+ .animtop{
+    height: 1500px;
+    color:bisque;
+    margin-top: 200px;
+    display: flex;
+    flex-wrap: wrap;
+ }
+ .animtop__box{
+     width: 300px;
+     margin: 20px 60px;
+     height: 300px;
+     display: flex;
+     
+     flex-direction: column;
+     justify-content:flex-end;
+     animation: annintopliv 1s ;
+    
+ }
+ .animtop__h2{
+     color:chocolate;
+     margin-bottom: 40px;
+   
+
+ }
+ .animtop__down{
+     height: 400px;
+ }
+
+ @keyframes annintopliv {
+     0%{
+         opacity: 1;
+     }100%{
+         opacity: 0;
+         transform: translate(50px, -50);
+         
+     }
+ }
+
+
+ /* math///////////////////////////////////// */
+
+ .math{
+     height: 500px;
+     color:bisque;
+     
+     animation: titleDown 3s ;
+ }
+ .math__h2{
+    
+     margin-bottom: 20px;
+     font-size: 55px;
+     animation: titleDown 3s ;
+    
+
+ }
+
+ .math__p{
+   margin-top: 20px;
+ }
+
+
+ /* toimg///////////////////////////////////////////// */
+
+
+ .toimg{
+     display: flex;
+     color: bisque;
+     font-size: 40px;
+ }
+ .toimg__img{
+     width: 70%;
+ }
+ .toimg__img2{
+     width: 400px;
+ }
+ .toimg__ferst{
+     margin-top: 180px;
+
+ }
+ .toimg__ferst{
+     position: relative;
+ }
+ .toimg__title{
+     position: absolute;
+     top: 200px;
+     left: -40px;
+     
+ }
+ .toimg__title2{
+     position: absolute;
+     top: 250px;
+     left: -40px;
+     
+ }
+ .toimg__sec{
+     position: relative;
+ }
+ .toimg__title3{
+     position: absolute;
+     top: 100px;
+     left: -40px;
+     
+ }
+ .toimg__title4{
+     position: absolute;
+     top: 150px;
+     left: -40px;
+     
+ }
+ .tooimg__raund{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: rgb(202, 89, 13);
+    position: relative;
+    left: 180px;
+    top: -50px;
+ }
+ .toimg__span1{
+     height: 50px;
+     width: 2px;
+     background-color: #000;
+     position: relative;
+     left: 35px;
+     top: 10px;
+ }
+ .toimg__span2{
+     height: 2px;
+     width: 50px;
+     background-color: #000;
+     position: relative;
+     left: 12px;
+     top: -15px;
+ }
+ .tooimg__raund2{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: rgb(202, 89, 13);
+    position: relative;
+    left: 170px;
+    top: -50px;
+
+ }
+ .tooimg__a{
+     cursor: pointer;
+ }
+ .tooimg__a2{
+     cursor: pointer;
+ }
+
+
+#footer{
+    padding: 60px;
+}
+ .footer{
+     color:bisque;
+     font-size: 16px;
+     margin-left: 100px 300px;
+   
+
+ }
+
+/* scroll active///////////////////////////////// */
+
+
+
+.scroll-active{
+    margin-left: 300px;
+   
+    transition: 2s;
+}
+.scroll-activeout{
+   
+
+    
+    transition: 4s;
+}
+
+ 
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* animation/////////////////////////////////////// */
+
+
+
+
+
+
+
+
+
+ .pis1{
+     position: fixed;
+    
+     height: 3px;
+     width: 7px;
+     border-radius: 50%;
+     box-shadow: 0 0 10px 3px rgb(211, 100, 9);
+     background-color: rgb(211, 100, 9);
+     animation: pis1 5s infinite;
+ }
+ .pis2{
+     position: fixed;
+    
+     height: 6px;
+     width: 4px;
+     border-radius: 50%;
+     box-shadow: 0 0 3px 10px rgb(211, 100, 9);
+     background-color: rgb(211, 100, 9);
+     animation: pis2 4s infinite;
+ }
+ .pis3{
+     position: fixed;
+    
+     height: 2px;
+     width: 4px;
+     border-radius: 50%;
+     box-shadow: 0 0 5px 5px rgb(211, 100, 9);
+     background-color: rgb(211, 100, 9);
+     animation: pis3 3s infinite;
+ }
+ .pis4{
+     position: fixed;
+    
+     height: 8px;
+     width: 4px;
+     border-radius: 50%;
+     box-shadow: 0 0 7px 4px rgb(211, 100, 9);
+     background-color: rgb(211, 100, 9);
+     animation: pis4 3s infinite;
+ }
+ .pis5{
+     position: fixed;
+    
+     height: 4px;
+     width: 4px;
+     border-radius: 50%;
+     box-shadow: 0 0 10px 10px rgb(211, 100, 9);
+     background-color: rgb(211, 100, 9);
+     animation: pis5 4s infinite;
+ }
+ .pis6{
+     position: fixed;
+    
+     height: 5px;
+     width: 4px;
+     border-radius: 50%;
+     box-shadow: 0 0 2px 6px rgb(211, 100, 9);
+     background-color: rgb(211, 100, 9);
+     animation: pis6 5s infinite;
+ }
+ .pis7{
+     position: fixed;
+    
+     height: 3px;
+     width: 3px;
+     border-radius: 50%;
+     box-shadow: 0 0 3px 8px rgb(211, 100, 9);
+     background-color: rgb(211, 100, 9);
+     animation: pis7 6s infinite;
+ }
+ .pis8{
+     position: fixed;
+    
+     height: 5px;
+     width: 5px;
+     border-radius: 50%;
+     box-shadow: 0 0 8px 3px rgb(211, 100, 9);
+     background-color: rgb(211, 100, 9);
+     animation: pis8 5s infinite;
+ }
+ .pis9{
+     position: fixed;
+     width: 2px;
+     height: 9px;
+     border-radius: 50%;
+     box-shadow: 0 0 4px 7px rgb(211, 100, 9);
+     background-color: rgb(211, 100, 9);
+     animation: pis9 6s infinite;
+ }
+ .pis10{
+     position: fixed;
+    
+     height: 6px;
+     width: 4px;
+     border-radius: 50%;
+     box-shadow: 0 0 10px 5px rgb(211, 100, 9);
+     background-color: rgb(211, 100, 9);
+     animation: pis10 4s infinite;
+ }
+ .pis11{
+     position: fixed;
+    
+     height: 6px;
+     width: 6px;
+     border-radius: 50%;
+     box-shadow: 0 0 4px 2px rgb(226, 161, 108);
+     background-color: rgb(211, 100, 9);
+     animation: pis11 5s infinite;
+ }
+ .pis12{
+     position: fixed;
+    
+     height: 6px;
+     width: 6px;
+     border-radius: 50%;
+     box-shadow: 0 0 4px 2px rgb(226, 161, 108);
+     background-color: rgb(211, 100, 9);
+     animation: pis11 5s infinite;
+ }
+ .pis12{
+     position: fixed;
+    
+     height: 6px;
+     width: 6px;
+     border-radius: 50%;
+     box-shadow: 0 0 4px 2px rgb(226, 161, 108);
+     background-color: rgb(211, 100, 9);
+     animation: pis12 5s infinite;
+ }
+ .pis13{
+     position: fixed;
+    
+     height: 6px;
+     width: 6px;
+     border-radius: 50%;
+     box-shadow: 0 0 4px 2px rgb(226, 161, 108);
+     background-color: rgb(211, 100, 9);
+     animation: pis13 5s infinite;
+ }
+ .pis14{
+     position: fixed;
+    
+     height: 6px;
+     width: 6px;
+     border-radius: 50%;
+     box-shadow: 0 0 4px 2px rgb(226, 161, 108);
+     background-color: rgb(211, 100, 9);
+     animation: pis14 3s infinite;
+ }
+ .pis15{
+     position: fixed;
+    
+     height: 6px;
+     width: 6px;
+     border-radius: 50%;
+     box-shadow: 0 0 4px 2px rgb(226, 161, 108);
+     background-color: rgb(211, 100, 9);
+     animation: pis15 3s infinite;
+ }
+ .pis16{
+     position: fixed;
+    
+     height: 6px;
+     width: 6px;
+     border-radius: 50%;
+     box-shadow: 0 0 4px 2px rgb(226, 161, 108);
+     background-color: rgb(211, 100, 9);
+     animation: pis17 4s infinite;
+ }
+ .pis17{
+     position: fixed;
+    
+     height: 6px;
+     width: 6px;
+     border-radius: 50%;
+     box-shadow: 0 0 4px 2px rgb(226, 161, 108);
+     background-color: rgb(211, 100, 9);
+     animation: pis18 3s infinite;
+ }
+ .pis18{
+     position: fixed;
+    
+     height: 6px;
+     width: 6px;
+     border-radius: 50%;
+     box-shadow: 0 0 4px 2px rgb(226, 161, 108);
+     background-color: rgb(211, 100, 9);
+     animation: pis19 4s infinite;
+ }
+ .pis19{
+     position: fixed;
+    
+     height: 6px;
+     width: 6px;
+     border-radius: 50%;
+     box-shadow: 0 0 4px 2px rgb(226, 161, 108);
+     background-color: rgb(211, 100, 9);
+     animation: pis20 5s infinite;
+ }
+ .pis20{
+     position: fixed;
+    
+     height: 6px;
+     width: 6px;
+     border-radius: 50%;
+     box-shadow: 0 0 4px 2px rgb(226, 161, 108);
+     background-color: rgb(211, 100, 9);
+     animation: pis14 5s infinite;
+ }
+ @keyframes pis1{
+     0%{
+        bottom: -130px;
+        left: 130px;
+     }100%{
+        bottom:800px;
+        left: 1300px;
+     }
+ }
+ @keyframes pis2{
+     0%{
+        bottom: -130px;
+        left: 130px;
+     }100%{
+        bottom:800px;
+        left: 1300px;
+     }
+ }
+ @keyframes pis3{
+     0%{
+        bottom: -100px;
+        left: 100px;
+     }100%{
+        bottom:900px;
+        left: 1300px;
+     }
+ }
+ @keyframes pis4{
+     0%{
+        bottom: -30px;
+        left: 30px;
+     }100%{
+        bottom:700px;
+        left: 1300px;
+     }
+ }
+ @keyframes pis5{
+     0%{
+        bottom: -730px;
+        left: 100px;
+     }100%{
+        bottom:800px;
+        left: 1100px;
+     }
+ }
+ @keyframes pis6{
+     0%{
+        bottom: -90px;
+        left: 130px;
+     }100%{
+        bottom:800px;
+        left: 1000px;
+     }
+ }
+ @keyframes pis7{
+     0%{
+        bottom: 0px;
+        left: 130px;
+     }100%{
+        bottom:800px;
+        left: 700px;
+     }
+ }
+ @keyframes pis8{
+     0%{
+        bottom: -230px;
+        left: 60px;
+     }100%{
+        bottom:850px;
+        left: 1200px;
+     }
+ }
+ @keyframes pis9{
+     0%{
+        bottom: 130px;
+        left: -130px;
+     }100%{
+        bottom:900px;
+        left: 1100px;
+     }
+ }
+ @keyframes pis10{
+     0%{
+        bottom: 130px;
+        left: -130px;
+     }100%{
+        bottom:660px;
+        left: 1000px;
+     }
+ }
+ @keyframes pis11{
+     0%{
+        bottom: 130px;
+        left: 130px;
+     }100%{
+        bottom:800px;
+        left: 1300px;
+     }
+ }
+ @keyframes pis12{
+     0%{
+        bottom: 130px;
+        left: 230px;
+     }100%{
+        bottom:700px;
+        left: 1300px;
+     }
+ }
+ @keyframes pis13{
+     0%{
+        bottom: -100px;
+        left: 200px;
+     }100%{
+        bottom:900px;
+        left: 1100px;
+     }
+ }
+ @keyframes pis14{
+     0%{
+        bottom: -130px;
+        left: 170px;
+     }100%{
+        bottom:800px;
+        left: 1300px;
+     }
+ }
+ @keyframes pis15{
+     0%{
+        bottom: 130px;
+        left: -130px;
+     }100%{
+        bottom:800px;
+        left: 900px;
+     }
+ }
+ @keyframes pis16{
+     0%{
+        bottom: -130px;
+        left: 130px;
+     }100%{
+        bottom:800px;
+        left: 600px;
+     }
+ }
+ @keyframes pis17{
+     0%{
+        bottom: 130px;
+        left: -130px;
+     }100%{
+        bottom:800px;
+        left: 900px;
+     }
+ }
+ @keyframes pis18{
+     0%{
+        bottom: 0px;
+        left: 130px;
+     }100%{
+        bottom:900px;
+        left: 1300px;
+     }
+ }
+ @keyframes pis19{
+     0%{
+        bottom: 130px;
+        left: 0px;
+     }100%{
+        bottom:800px;
+        left: 1000px;
+     }
+ }
+ @keyframes pis19{
+     0%{
+        bottom: 130px;
+        left: 130px;
+     }100%{
+        bottom:800px;
+        left: 1300px;
+     }
+ }
+ 
+
+
+
+

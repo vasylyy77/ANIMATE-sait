@@ -1,0 +1,9 @@
+.container{
+    width: 1000px;
+    margin: 0 auto;
+}
+.df{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
